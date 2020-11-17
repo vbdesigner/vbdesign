@@ -450,7 +450,7 @@ img{
 }
 
 .portfolio-content{
-  width: 320px;
+  width: 350px;
   height: 350px;
   background-color: white;
   border-radius: .5rem;
@@ -458,7 +458,7 @@ img{
   box-shadow: 0 4px 6px rgba(174,190,205,.3);
 }
 .portfolio-img{
-  width: 320px;
+  width: 350px;
   height: 300px;
   object-fit: cover;
   transition: .4s;
