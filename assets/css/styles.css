@@ -437,7 +437,7 @@ img{
 .portfolio-nav{
   text-align: center;
   margin-bottom: var(--mb-4);
-  font-size: 14px;
+  font-size: 13px;
   cursor: pointer;
 }
 .portfolio-item{
