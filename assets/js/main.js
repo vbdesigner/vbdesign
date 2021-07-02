@@ -103,7 +103,7 @@ const mixer =  mixitup('.portfolio-container',{
 
 
 /* Link active portfolio */ 
-const linkPortfolio = document.querySelectorAll('.portfolio-item2')
+const linkPortfolio = document.querySelectorAll('.portfolio-item')
 
 function ActivePortfolio() {
     if(linkPortfolio){
@@ -273,5 +273,37 @@ if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
   } 
 }
 
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = $('.myImg');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+var closeModal = function(event) {
+    if (event.target == modal) {
+       modal.style.display = "none";
+    }
+  }
+  
+  window.addEventListener('click', closeModal);
+  window.addEventListener('touchend', closeModal);
+  
 
 
